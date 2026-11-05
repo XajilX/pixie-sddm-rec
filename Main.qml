@@ -480,7 +480,6 @@ Rectangle {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.preferredWidth: userNameLabel.width + 40
                     Layout.preferredHeight: userNameLabel.height + 20
-                    Layout.topMargin: 10
 
                     Rectangle {
                         anchors.fill: parent
@@ -524,7 +523,7 @@ Rectangle {
 
                 Rectangle {
                     id: sessionPill
-                    visible: typeof sessionModel !== "undefined" && sessionModel.count > 1
+                    visible: typeof sessionModel !== "undefined" && sessionModel.count >= 1
                     Layout.alignment: Qt.AlignHCenter
                     Layout.preferredWidth: 180
                     Layout.preferredHeight: 36
@@ -572,7 +571,7 @@ Rectangle {
 
                 TextField {
                     id: passwordField
-                    Layout.topMargin: 30 // Keeps space above it static
+                    Layout.topMargin: 15 // Keeps space above it static
                     echoMode: TextInput.Password
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignHCenter
@@ -622,6 +621,7 @@ Rectangle {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.preferredWidth: 64
                     Layout.preferredHeight: 64
+                    Layout.topMargin: 10
                     focusPolicy: Qt.NoFocus
                     enabled: !container.isLoggingIn
 
