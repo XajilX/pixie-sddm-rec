@@ -1,3 +1,13 @@
+# Pixie SDDM Rec
+
+A personally modification of the pixie sddm theme, use [Recursive Sans](https://www.recursive.design) by default. 
+
+<div align="center">
+  <img src="screenshots/lock_screen_rec.png" width="45%" alt="Lock Screen (use Recursive Sans)" />
+  <img src="screenshots/login_screen_rec.png" width="45%" alt="Login Screen (usee Recursive Sans)" />
+</div>
+
+
 # ✨ Pixie SDDM
 
 A clean, modern, and minimal SDDM theme inspired by Google Pixel UI and Material Design 3. Supports both the latest **Qt6** engine and legacy **Qt5** systems.
