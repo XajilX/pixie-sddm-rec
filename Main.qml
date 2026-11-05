@@ -229,9 +229,9 @@ Rectangle {
         }
     }
 
-    FontLoader { id: fontRegular; source: "assets/fonts/FlexRounded-R.ttf" }
-    FontLoader { id: fontMedium; source: "assets/fonts/FlexRounded-M.ttf" }
-    FontLoader { id: fontBold; source: "assets/fonts/FlexRounded-B.ttf" }
+    FontLoader { id: fontRegular; source: "assets/fonts/RecursiveSansCslSt-Regular.otf" }
+    FontLoader { id: fontMedium; source: "assets/fonts/RecursiveSansCslSt-Med.otf" }
+    FontLoader { id: fontBold; source: "assets/fonts/RecursiveSansCslSt-Bold.otf" }
 
     property var availableFonts: Qt.fontFamilies()
     property string activeFontRegular: (config.fontFamily && config.fontFamily.length > 0 && availableFonts.indexOf(config.fontFamily) >= 0) ? config.fontFamily : fontRegular.name

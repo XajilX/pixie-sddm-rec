@@ -10,7 +10,7 @@ Item {
     property string backgroundSource: ""
     property color defaultHoursColor: "#AED68A"
     property color defaultMinutesColor: "#D4E4BC"
-    property string fontFamily: "FlexRounded" // Overridden by Main.qml
+    property string fontFamily: "Recursive Sans Csl St" // Overridden by Main.qml
     property color baseAccent: config.accentColor
     property color smartHoursColor: defaultHoursColor
     property color smartMinutesColor: defaultMinutesColor
@@ -65,13 +65,17 @@ Item {
         spacing: 0
 
         Column {
-            spacing: -130
+            spacing: -50
             Text {
                 text: clock.timeStr.charAt(0)
                 color: clock.smartHoursColor
                 font.pixelSize: 200
                 font.family: clock.fontFamily
                 font.weight: Font.Medium
+                font.features: {
+                  "ss10": 1,
+                  "ss11": 1
+                }
                 width: 130
                 horizontalAlignment: Text.AlignHCenter
                 antialiasing: true
@@ -82,6 +86,10 @@ Item {
                 font.pixelSize: 200
                 font.family: clock.fontFamily
                 font.weight: Font.Medium
+                font.features: {
+                  "ss10": 1,
+                  "ss11": 1
+                }
                 width: 130
                 horizontalAlignment: Text.AlignHCenter
                 antialiasing: true
@@ -89,13 +97,17 @@ Item {
         }
 
         Column {
-            spacing: -130
+            spacing: -50
             Text {
                 text: clock.timeStr.charAt(1)
                 color: clock.smartHoursColor
                 font.pixelSize: 200
                 font.family: clock.fontFamily
                 font.weight: Font.Medium
+                font.features: {
+                  "ss10": 1,
+                  "ss11": 1
+                }
                 width: 130
                 horizontalAlignment: Text.AlignHCenter
                 antialiasing: true
@@ -106,6 +118,10 @@ Item {
                 font.pixelSize: 200
                 font.family: clock.fontFamily
                 font.weight: Font.Medium
+                font.features: {
+                  "ss10": 1,
+                  "ss11": 1
+                }
                 width: 130
                 horizontalAlignment: Text.AlignHCenter
                 antialiasing: true
